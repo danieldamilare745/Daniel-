@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Daniel Portfolio</title>
+        <style>
+            body {
+         font-family: 'Segoe UI', Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background: linear-gradient(135deg, #e0f7fa 0%, #f4f4f4 100%);
+                min-height: 100vh;
+            }
+            header {
+                background: linear-gradient(90deg, #0aa1ff 60%, #249be6 100%);
+                color: white;
+                padding: 32px 0 24px 0;
+                text-align: center;
+                box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+                border-bottom-left-radius: 24px;
+                border-bottom-right-radius: 24px;
+            }
+            nav ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            nav ul li {
+                display: inline-block;
+                margin: 0 18px;
+            }
+            nav ul li a {
+                color: white;
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 1.1em;
+                padding: 6px 12px;
+                border-radius: 8px;
+                transition: background 0.2s;
+            }
+            nav ul li a:hover {
+                background: rgba(255,255,255,0.18);
+            }
+            .profile {
+                display: flex;
+                align-items: center;
+                gap: 32px;
+                background: white;
+                padding: 32px;
+                border-radius: 18px;
+                box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+                margin-bottom: 32px;
+                margin-top: 32px;
+            }
+            .profile img {
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 3px solid #0cc1ee;
+                box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            }
+            main {
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 32px 16px 80px 16px;
+            }
+            section {
+                margin-bottom: 32px;
+            }
+            h2 {
+                color: #0aa1ff;
+                margin-bottom: 12px;
+                font-size: 2em;
+                font-weight: 700;
+            }
+            .skills, .projects, .contact-info {
+                background: white;
+                padding: 28px;
+                border-radius: 16px;
+                box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+            }
+            .skills ul, .projects ul {
+                padding-left: 24px;
+            }
+            .skills li, .projects li {
+                margin-bottom: 12px;
+                font-size: 1.08em;
+            }
+            .skills li strong, .projects li strong {
+                color: #249be6;
+            }
+            .about-details ul {
+                padding-left: 24px;
+            }
+            .about-details li {
+                margin-bottom: 8px;
+                font-size: 1.05em;
+            }
+            .project-links a {
+                color: #0aa1ff;
+                text-decoration: underline;
+                margin-left: 8px;
+                font-weight: 500;
+                transition: color 0.2s;
+            }
+            .project-links a:hover {
+                color: #249be6;
+            }
+            .contact-info p {
+                margin: 12px 0;
+                font-size: 1.08em;
+            }
+            .contact-info a {
+                color: #0aa1ff;
+                text-decoration: underline;
+                font-weight: 500;
+                transition: color 0.2s;
+            }
+            .contact-info a:hover {
+                color: #249be6;
+            }
+            footer {
+                background: linear-gradient(90deg, #154de6 60%, #0aa1ff 100%);
+                color: white;
+                text-align: center;
+                padding: 18px 0;
+                position: fixed;
+                width: 100%;
+                bottom: 0;
+                font-size: 1.1em;
+                letter-spacing: 1px;
+                box-shadow: 0 -2px 12px rgba(0,0,0,0.07);
+            }
+            @media (max-width: 700px) {
+                .profile {
+                    flex-direction: column;
+                    text-align: center;
+                }
+                main {
+                    padding: 16px 4px 80px 4px;
+                }
+}
+
+        </style> 
+    </head>
+    <body>
+        <header>
+            <h1>Daniel Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="home" class="profile">
+                <img src="dk design.jpg" alt="Your Photo">
+                <div>
+                    <h2>Daniel</h2>
+                    <p>Hi! I'm Daniel, a passionate developer. Welcome to my portfolio website.</p>
+                    <p>I specialize in creating modern, responsive web applications and enjoy solving real-world problems with code.</p>
+                    <p>Scroll down to learn more about my skills, projects, and how to contact me!</p>
+                </div>
+            </section>
+            <section id="about">
+                <h2>About Me</h2>
+                <p>I am a web developer and a Graphics Designer with so much experience. For the web developer it include of:HTML, CSS, JavaScript. While the Graphics Design include:CorelDraw, Canva, PowerPoint, Publisher. I am so creative in  different website design and Graphic designers. love building beautiful and functional websites.</p>
+                <div class="about-details">
+                    <ul>
+                        <li><strong>Location:</strong> Lagos, Nigeria</li>
+                        <li><strong>Education:</strong> BSc in Economist and in Computer Science </li>
+                        <li><strong>Interests:</strong> Coding, UI/UX Design, Open Source, Logo Design, Graphic Design e.t.c</li>
+                        <li><strong>Languages:</strong> English</li>
+                    </ul>
+                </div>
+            </section>
+            <section id="skills" class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li><strong>Frontend:</strong> HTML, CSS, JavaScript, React, Bootstrap</li>
+                    <li><strong>Backend:</strong> Node.js, Express, Python (Flask)</l>
+                    <li><strong>Graphic Designer:</strong> CorelDraw, Canva, PowerPoint, Publisher.</li>
+                    <li><strong>Version Control & Apps:</strong> CorelDraw, Git & GitHub.</li>
+                    <li><strong>Other:</strong>Responsive Design, Strategies Design etc. </li>
+                </ul>
+            </section>
+            <section id="projects" class="projects">
+                <h2>Projects</h2>
+                <ul>
+                    <li>
+                        <strong>Portfolio Website:</strong> 
+                        This website showcasing my work and skills, However I make verious design of Canva, CorelDraw, Publisher, PowerPoint.
+                        <span class="project-links">
+                            <a href="https://github.com/yourusername/portfolio" target="_blank">GitHub</a>
+                            <a href="https://CorelDraw.com/yourusername/portfolio" target="_blank">CorelDraw</a>
+                        </span>
+                    </li>
+                    <li>
+                        <strong>Weather App:</strong> 
+                        A web app that shows weather info using an API. Features location search and live updates.
+                        <span class="project-links">
+                            <a href="https://github.com/yourusername/weather-app" target="_blank">GitHub</a>
+                        </span>
+                    </li>
+                    <li>
+                        <strong>Todo List:</strong> 
+                        A simple and effective todo list app with local storage and filtering.
+                        <span class="project-links">
+                            <a href="https://github.com/yourusername/todo-list" target="_blank">GitHub</a>
+                        </span>
+                    </li>
+                    <li>
+                        <strong>Blog Platform:</strong> 
+                        A full-stack blog platform built with React and Node.js.
+                        <span class="project-links">
+                            <a href="https://github.com/yourusername/blog-platform" target="_blank">GitHub</a>
+                        </span>
+                    </li>
+                </ul>
+            </section>
+            <section id="contact">
+                <h2>Contact</h2>
+                <div class="contact-info">
+                    <p>Email: <a href="mailto:danieldamilare787@gmail.com">danieldamilare787@gmail.com</a></p>
+                    <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+                    <p>GitHub: <a href="https://github.com/bilimonie" target="_blank">github.com/daniel's</a></p>
+                    <p>Twitter: <a href="https://twitter.com/Dee_Vibez" target="_blank">@daniel's</a></p>
+                    <p>Tiktok: <a href="https://Tiktok.com/Dee_Vibez" target="_self">danieldamilare001</a></p>
+                    <p>Feel free to reach out for collaborations, freelance work, and design posters or just to say hi!</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2025 Daniel. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
